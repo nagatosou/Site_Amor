@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docinho_De_Coco</title>
+    <script src="aula.js"></script>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <title>Escolha com sabedoria</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #07bff7;
+            margin: 10px;
+            display: inline-block;
+            cursor: pointer;
+            text-align: center;
+            line-height: 100px;
+        }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: #fa0404;
+            margin: 10px;
+            display: inline-block;
+            cursor: pointer;
+            text-align: center;
+            line-height: 100px;
+        }
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: #0bb90b;
+            margin: 10px;
+            display: inline-block;
+            cursor: pointer;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Caixas Clicáveis</h1>
+    <div class="box" onclick="boxClicked(1)">Caixa 1</div>
+    <div class="box2" onclick="boxClicked(2)">Caixa 2</div>
+    <div class="box3" onclick="boxClicked(3)">Caixa 3</div>
+
+    <script>
+
+        function boxClicked(index) {
+            var message;
+            
+            switch (index) {
+                case 1:
+                    message = "Voce escolheu caixa 1 , voce ganhou vale beijo <3.";
+                    break;
+                case 2:
+                    message = "Parabéns! Você Acaba de ganha vale lanche :D.";
+                    break;
+                case 3:
+                    message = "Essa é a Caixa Voce acaba de ganhan um dia comigo <3";
+                    break;
+                default:
+                    message = "Caixa desconhecida.";
+                    break;
+            }
+            
+            alert(message);
+        }
+    </script>
+</body>
